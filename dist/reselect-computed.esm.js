@@ -10,4 +10,4 @@ var bindSelectCreators = function (selectors, state) {
 };
 
 export { bindSelectCreators };
-//# sourceMappingURL=reselect-computed.es.js.map
+//# sourceMappingURL=reselect-computed.esm.js.map

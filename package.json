@@ -1,9 +1,9 @@
 {
   "name": "reselect-computed",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Declaratively created computed properties.",
   "main": "dist/reselect-computed.cjs.js",
-  "module": "dist/reselect-computed.es.js",
+  "module": "dist/reselect-computed.esm.js",
   "scripts": {
     "test": "jest --coverage",
     "coverage": "cat ./coverage/lcov.info | coveralls",
