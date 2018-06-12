@@ -1,7 +1,7 @@
 {
   "name": "reselect-computed",
-  "version": "0.1.1",
-  "description": "Declaratively created computed properties.",
+  "version": "0.1.2",
+  "description": "Declaratively created computed properties for Redux and Reselect.",
   "main": "dist/reselect-computed.cjs.js",
   "module": "dist/reselect-computed.esm.js",
   "scripts": {
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/Vanilla-IceCream/reselect-computed.git"
   },
   "keywords": [
-    "Rollup",
-    "PostHTML"
+    "Redux",
+    "Reselect"
   ],
   "author": "Vanilla IceCream",
   "license": "MIT",

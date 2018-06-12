@@ -1,8 +1,10 @@
 # reselect-computed [![Build Status](https://travis-ci.org/Vanilla-IceCream/reselect-computed.svg?branch=master)](https://travis-ci.org/Vanilla-IceCream/reselect-computed) [![Coverage Status](https://coveralls.io/repos/github/Vanilla-IceCream/reselect-computed/badge.svg?branch=master)](https://coveralls.io/github/Vanilla-IceCream/reselect-computed?branch=master)
 
-Declaratively created computed properties.
+Declaratively created computed properties for Redux and Reselect.
 
-## Install
+## Installation and Usage
+
+### CJS or ESM
 
 ```bash
 $ npm i reselect-computed -S
@@ -10,7 +12,15 @@ $ npm i reselect-computed -S
 $ yarn add reselect-computed
 ```
 
-## Usage
+```js
+// commonjs
+const { bindSelectCreators } = require('reselect-computed');
+
+// es modules
+import { bindSelectCreators } from 'reselect-computed';
+```
+
+## Getting Started
 
 ```js
 // types.js
@@ -72,9 +82,10 @@ import * as selectors from './selectors';
 
 export const Counter = ({ counter, actions, selectors }: Props): React.Element<Props> => (
   <div>
-    <p className="typography">
-      Clicked: {counter.value} times, value is {selectors.evenOrOdd}.
-    </p>
+    <div className="typography">
+      <button onClick={actions.increment}>Increment</button>
+      <p>Clicked: {counter.value} times, value is {selectors.evenOrOdd}.</p>
+    </div>
 
     <style jsx>{`
       .typography {
